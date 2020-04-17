@@ -1,0 +1,25 @@
+from __future__ import print_function
+import GSenseAct as g
+import time
+
+print(g.readBatt())
+print(g.readMassPos())
+print(g.readPumpPos())
+print(g.readTemperature())
+print(g.readHumidity())
+print(g.readPressure())
+print(g.readDepth())
+print(g.readGyro())
+print(g.readMag())
+print(g.readAccel())
+g.setPumpPos(10.5)
+g.setPumpSpd(55)
+g.setPumpPos(10.5)
+g.setMassPos(50)
+g.setServoPos(-45)
+time.sleep(3)
+g.setMassSpd(95)
+time.sleep(3)
+g.setMassPos(95.5)
+time.sleep(4)
+g.setMassPos(50.5)
